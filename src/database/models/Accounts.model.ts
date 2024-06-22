@@ -29,6 +29,9 @@ export class Accounts {
 
   @Prop()
   dateOfBirth: Date;
+
+  @Prop({ default: 0 })
+  balance: number;
 }
 
 export const AccountModel = SchemaFactory.createForClass(Accounts);
